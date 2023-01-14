@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(226, 190, 177);
+    margin: 0px;
+}
+
+header {
+    background-color: rgb(31, 160, 31);
+    color: white;
+    padding: 10px;
+
+}
+ 
+header > h1 {
+    color: white;
+    text-align: center;
+}
+
+header > p {
+    color: white;
+    text-align: center;
+}
+
+h1 { 
+    color: black;
+    text-align: justify; /* serve para deixar o texto no centro */
+ }
+
+ h2 {
+    color: black;
+    text-align: justify;
+ }
+
+ p {
+    color: black;
+    text-align: justify;
+    margin: 0px;
+    padding: 7px;
+ }
+
+div {
+    color: white;
+    display: inline-block;/* deixa os blocos um do lado do outro*/
+    text-align: center;
+    margin-right: 20px;
+   /* font-weight: bold; */
+    
+}
+
+div:hover {
+    background-color: darkolivegreen;
+    border-radius: 3px;
+}
+
+
+
+main {
+    background-color: white;
+    width: 900px; /* largura*/
+    padding: 10px; /*acochoamento, da um espaço entre o texto e a borda*/
+    margin: auto; /*deixa o backgroud centralizado*/
+    text-align: center; /* deixa as imagens centralizadas*/
+}
+
+
+
+
+article {
+    background-color: aquamarine;
+    border-radius: 10px 10px;
+    padding: 5px;
+}
+
+article > h3 {
+    background-color: rgb(47, 0, 255);
+    text-align: justify;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+    margin: 0px;
+}
+
+aside {
+    background-color: blueviolet;
+    margin: auto;
+}
+
+aside > p {
+    text-align: center;
+    padding: 2px;
+}
+
+/* div {
+    height: 310px;
+    width: 900px;
+    background-color: rgb(122, 21, 21);
+} 
+
+----era para ser a parte de configuração do fundo do video, porem tem outro div la emcima então acaba mudando a configuração de todos, então vamos tentar solucionar esse problema ----- */
+

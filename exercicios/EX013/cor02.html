@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+       
+       *{ /*CONFIRGURAÇÃO GLOBAL DA CSS (height é ALTURA*/
+        height: 100%;
+       } 
+
+/* para fazer um degrade temos que usar tudo que esta nessa linha abaixo. Dentro do parenteses o to é seguido por -------- LEFT (vai da esquerda para direita) TOP (de baixo para cima) ou RIGHT (vai da direira para esquerda) BOTTOM (de cima para baixo)*/
+        body {   
+            background-image: linear-gradient(to bottom, #423ADD 10%,#B12179 60%, #F05330 , #F4A03B, #FAE081);
+            background-attachment: fixed; /*deixa imagem fixa mesmo que você role a tela */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Testando Gradiente (copiando degrade do Instagram)</h1>    
+</body>
+</html>

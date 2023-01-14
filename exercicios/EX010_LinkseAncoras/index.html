@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">       <!-- para envelopar é só clicar no CTRL+SHIFT+P -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1> 
+                              <!--href = referencia a HiperTexto-->
+        <p>Nesse primeiro caso, quando clicar no link, ele vai abrir na mesma pasgina, o que 
+        não queremos, porque a pessoa provavelmente nunca mais vai voltar para nossa pagina.</p>
+    
+        <p>Você pode acessar o meu <a href="https://replit.com/@YasminCosta1/">espaço no replit</a></p>
+    
+        <hr>
+        
+        <p>Nesse segundo caso usamos target="_blank" (janela em branco)para ir para
+        outra pagina e que mantenha a nossa aberta. Outra coisa que dá para usar é rel="external"
+        (relativo a tipo externos)... Mas só usar o <i>target</i> da certo.</p>
+        
+        <p>Você pode acessar o meu <a href="https://replit.com/@YasminCosta1/" target="_blank"
+        rel="external">espaço no replit</a></p>
+
+    <h2>Links Internos</h2>
+    
+    <p>Está é a primeira pagina do meu site. Se você quiser, pode acessar 
+        também a minha <a href="pag002.html" rel="next" target="_self"> segunda pagina</a></p>
+                    <!-- rel next indica que esse link é a proxima pagina-->
+    <p>Você tambem pode acessar a minha 
+    <a href="noticias/pag003.html" rel="next" target="_self"> terceira pagina</a></p>
+
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="livro/05 - Caracteres, parágrafos e quebras de linha.pdf" 
+            download="05 - Caracteres, parágrafos e quebras de linha.pdf"
+            type="application/pdf">Baixar livro em PDF</a></li>
+
+        <li><a href="livro/05 - Caracteres, parágrafos e quebras de linha.zip" 
+             download="05 - Caracteres, parágrafos e quebras de linha.zip"
+             type="application/zip">Baixar livro em ZIP</a></li>    
+    </ul>
+
+</body>
+</html>

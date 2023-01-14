@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mútiplas Mídias</title>
+</head>
+
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes, ou simplismente aumente o 
+        tamanho do seu navegador.
+    </p>
+
+    <picture>
+        <!-- para aparecer esse source, escreve a palavra source e seleciona 
+        source:midia:type. vai estar em min, ai muda para ex: "max-width: 750px"-->
+        <source media="(max-width: 750px)" srcset="imagens/pequeno.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/medio.png" type="image/png">
+        <img src="imagens/grande.png" alt="Imagem Flexivel ">
+    </picture>
+    
+    <h1>Reproduzindo Áudio </h1>
+    <p>Vamos aprender a reproduzir áudio em HTML5.</p>
+    <!--<audio src="midia/operator_error.mp3" controls autoplay></audio>
+    <audio src="midia/takeoff.mp3" controls autoplay></audio> -->
+
+    <audio preload="auto" controls autoplay >
+        <source src="midia/operator_error.mp3" type="audio/mpeg">
+        <source src="midia/operator_error.mp3" type="audio/ogg">
+        <source src="midia/operator_error.mp3" type="audio/wav">
+    <p>Infelizmente o seu navegador não consegue reproduzir áudio.
+    <a href="midia/operator_error.mp3">Clique aqui para baicar o arquivo MP3</a></p>
+    <!-- nesse caso vai tocar apenas 1 AUDIO, porem vai ser o que funcionar no seu navegador.
+    fazer isso é bom para funcionar em qualquer  navegador-->
+    </audio>
+
+    <hr>
+
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio sevidor</p>
+
+    <video  width="950" controls>
+    <source src="midia/video_montanha.m4v" type="video/m4v">
+    <source src="midia/video_montanha.webm" type="video/webm"> 
+    </video>
+    <!--colocar todos os tipos de video que tiver nessa ordem de importancia MP4, m4v, webm e ogv-->
+    <video src="midia/video_cafe.webm" width="301" controls></video>
+    <!--width é para arrumar o tamanho do video no sitex'-->
+<hr>
+
+    <h1>Inserindo video do YouTube</h1> <!--Video tirado do youtube: Reaction reel-->
+    <iframe width="700" height="400" src="https://www.youtube.com/embed/FdE5G95B7Mg"
+     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+     clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>

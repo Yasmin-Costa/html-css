@@ -1,0 +1,14 @@
+Repositório local/ remoto:
+
+gerenciador de versões: guarda versões de um mesmo projeto. 
+- o sorftwer que faz isso é o Git.
+- o GIT é o repositório local
+
+-Agora hospedar e guardar todos os projetos é o GitHub.  Ou seja vai fazer o backup dos projetos. 
+- o GitHub é o repositório remoto.
+
+
+
+
+
+
