@@ -23,7 +23,7 @@ html, body {
 }
 
 header {
-    background-color: black;
+    background-color: rgb(100, 51, 4);
     color: white;
     text-align: center;
 }
@@ -46,6 +46,7 @@ a {
 }
 
 a:hover {
+    color:rgb(150, 135, 86);
     text-decoration: underline;
 }
 
@@ -64,7 +65,7 @@ section > p {
 
 
 section.normal {
-    background-color: white;
+    background-color: rgb(255, 246, 196);
     color: black;
    
 }
@@ -73,6 +74,8 @@ section.imagem {
     background-color: rgb(51, 45, 45);
     color: white;
     box-shadow: inset 6px 6px 10px 0px rgba(0, 0, 0, 0.473);
+    background-size: cover;
+    background-attachment: fixed; /* ****MUITO IMPORTANTE**** fixa a imagem no fundo, e faz funcionar o efeito de rolagem que a imagem parece que tem fundo que se alternam */
 }
 
 section.imagem > p {
@@ -85,12 +88,10 @@ section.imagem > p {
 section#img01 {
     background-image: url('../imagens/background001.jpg');
     background-position: right center;
-    background-size: cover; 
 }
 
 section#img02 {
     background-image: url('../imagens/background002.jpg');
-    background-size: cover;
 }
 
 footer {
