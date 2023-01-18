@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin: -10px;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 4em;
+}
+
+header p {
+    text-align: center;
+    font-size: 3em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline; /*faz aparecer uma linha embaixo mostrando que é um link*/
+
+}
+
+main {
+    background-color: rgb(143, 58, 58);
+    margin: 10px;
+    padding: 20px;
+    margin: -10px;
+}
+
+main p {
+    font-size: 3em
+}
+
+section.diferente {
+    background-color: rgba(0, 0, 0, 0.397);
+    color: white;
+    width: 600px;
+    padding: 4px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    margin: -8px;
+
+}
