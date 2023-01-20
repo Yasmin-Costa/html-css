@@ -5,30 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        table {
+            border-collapse: collapse;/*para deixar a borda unificadas*/
+            width: 300px;
+        }
+
+        td {
+            border: 1px;
+            border-style: solid;
+            border-color: black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+
 </head>
 <body>
     <h1>Mesclagem de Celula</h1>    
     <table>
         <tr>
             <td>A</td>
-            <td>B</td>
-            <td>C</td>
+            <td colspan="2">B</td> 
+            <!-- esse colspan  faz com que o B ocupe o espaço de duas celulas na tabela na parte HORIZONTAL-->
+            
         </tr>
 
         <tr>
-            <td>D</td>
+            <td rowspan="3">D</td> <!--o rowspan faz com que o D ocupe espaço de tres celular na tabela na parte VERTICAL.-->
             <td>E</td>
             <td>F</td>
         </tr>
 
         <tr>
-            <td>G</td>
+           
             <td>H</td>
             <td>I</td>
         </tr>
 
         <tr>
-            <td>J</td>
+            
             <td>K</td>
             <td>L</td>
         </tr>
