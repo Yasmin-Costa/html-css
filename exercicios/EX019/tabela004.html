@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de Tabelas</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        col.cnome, col.cidade {
+            background-color: rgb(124, 109, 109);
+        }
+
+        col.csexo, col.cprofis {
+            background-color: rgb(5, 255, 5);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+
+    <table>
+    
+        <!-- colgroup serve para criar class para as colunas para poder editar colunas com col.class.   assim podemos editar as colunas, mas para isso precisa expecificar que tal coisa é colina, ou seja colocar o scope="col"  na frente0-->
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprofis">
+        </colgroup>
+
+        <caption>Cadastro</caption>
+
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+
+        <tr>
+            <td>Claudio</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Programador</td>
+        </tr>
+
+        <tr>
+            <td>Gustavo</td>
+            <td>M</td>
+            <td>48</td>
+            <td>Professor</td>
+        </tr>
+
+        <tr>
+            <td>Mariana</td>
+            <td>F</td>
+            <td>20</td>
+            <td>Jornalista</td>
+        </tr>
+
+        <tr>
+            <td>Tays</td>
+            <td>F</td>
+            <td>21</td>
+            <td>Bibliotecaria</td>
+        </tr>
+
+        <tr>
+            <td>Jhony</td>
+            <td>M</td>
+            <td>22</td>
+            <td>Barbeiro</td>
+        </tr>
+
+
+    </table>
+
+    
+</body>
+</html>
