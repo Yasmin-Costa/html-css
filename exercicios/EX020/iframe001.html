@@ -5,15 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos de Iframe</title>
+
+    <style>
+        iframe {
+            width: 400px;
+            height: 400px;
+        }
+    </style>
 </head>
 <body>
 
     <h1>Testando o uso de Iframes</h1>
     <p>
-        acessando o site do 
-        <iframe src="https://www.cursoemvideo.com" frameborder="0"></iframe>
-        <!-- o iframe é um quadrado que permite ter um site dentro do seu site-->
-        para aprender a programar
+        Acessando o site do 
+
+        <!--
+             o iframe é um quadrado que permite ter um site dentro do seu site.
+
+             por PADRÃO tem o tamanho de 300x150px
+        -->
+
+
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" height="500px"> 
+            <!--o tamanho que for configurado na CSS é p qie prevalece, mesmo que configure a altura no html, o que prevalece é no CSS
+        
+-----  frameborder  = borda do iframe, mas pode ser apagado e configurar a borda com "border" dentro do CSS
+    
+-----  scolling = rolagem da tela, se não quiser que a tela role coloque   scolling="no"-->
+
+            <a href="https://ww.cursoemvideo.com" target="_blank"> Curso em video</a> <!--caso o iframe não funcione coloca-se o link do site onde a pessoa tem que acessar-->
+        </iframe>
+
+        para aprender a programar.
+    </p>
+
+
+
+    <p>
+        O repositório do Guanabara
+        <iframe src="https://gustavoguanabara.github.io" frameborder="0">
+            <a href="https://gustavoguanabara.github.io" target="_blank">no GitHub</a>
+        </iframe>
+        também é legal.
     </p>
     
 </body>
