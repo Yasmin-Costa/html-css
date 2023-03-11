@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+body {
+    background: url('./imagens/fundo-madeira.jpg') no-repeat top center;
+    background-size: cover; /*para a imagem cobrir a tela inteira*/
+    background-attachment: fixed; /*para a imagem ficar fixada*/
+}
+
+main {
+    position: relative;
+    height: 100vh;
+}
+
+section#telefone {
+    position: absolute; /*quando se coloca o position absolute, pode configurar a posição colocando como left, top, bottom*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*essa configuração usa-se para para deixar o conteudo no meio, idependente do tamanho da tela, mas precisa que o container de fora esteja relativo e o container que quer que fique no meio seja absoluto*/
+
+    height: 627px;
+    width: 311px;
+    background-color: blue;
+    background: url('./imagens/frame-iphone.png') no-repeat;
+}
