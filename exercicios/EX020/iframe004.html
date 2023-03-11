@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframes</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt nihil nostrum facilis iusto. Fuga, aliquid blanditiis. Quasi, sapiente laudantium esse, amet architecto perferendis fugiat et, delectus corrupti laborum provident nostrum.</p>
+
+
+        <!--sandbox é para permitir algo dentro do seu site, o sandbox="sandbox serve para que se colocar um iframe que peça informações do usuario, as informações que o usuario colocar não vai ser submetida. ou seja, não vai mandar as informações. 
+            Mas possui outros para permitir formularios, scripts entre outros..."
+        
+        ---referrerpolicy="no-referrer  é usado para que você não permita que o site dentro do iframe não colete nenhum tipo de informação do usuario, tipo aqueles bots que pegam infomações para mostrar propaganda depois. "-->
+
+    <iframe src="paginas/pag004.html" sandbox="allow-scripts allow-forms allow-same-origin" referrerpolicy="no-referrer">
+        Seu navegador não é compativel
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque obcaecati possimus voluptatum commodi tempora illum nisi pariatur voluptates, est ipsa reiciendis culpa dolore quidem quae odio architecto quia necessitatibus quo.</p>
+    
+</body>
+</html>
