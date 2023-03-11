@@ -45,3 +45,30 @@ iframe#tela{
     width: 269px;
     height: 471px;
 }
+
+
+
+
+/*configuração dos botoes*/
+
+section#redes-sociais {
+    text-align: right;  /*para deixar os botãos do lado direito*/
+}
+
+section#redes-sociais > a > img {
+    width: 50px;
+    right: 50px;
+     /*deixa as imagens(botoes) menores*/
+    margin: 10px; /*separa os botões um pouco*/
+    border-radius: 50%; /*deixa a borda redonda*/
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+    box-sizing: border-box; /*para a borda fazer parte da imagem, para quando fizer o img hover colocar uma borda e quando passar o mouse por cima as outras imagens não se mexer*/
+}
+
+section#redes-sociais > a > img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.466);
+    transform: translate(-2px, -2px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.616);
+    transition: transform 0.4s;
+}
+
