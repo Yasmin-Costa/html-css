@@ -35,3 +35,13 @@ section#telefone {
     background-color: blue;
     background: url('./imagens/frame-iphone.png') no-repeat;
 }
+
+
+/*para dar certo tem que arrumar as configurações de body na home.html, para a imagem aparecer por inteiro na tela do celular foi usado brackground-size: cover*/
+iframe#tela{
+    position: relative;
+    top: 80px;
+    left: 22px;
+    width: 269px;
+    height: 471px;
+}
