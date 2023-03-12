@@ -23,8 +23,12 @@
 
             <!--no input name é para o html e php identificar, ja no id é para javaScript, -->
 
-            <!-- SEMPRE USAR LABEL cria uma area maior de sensibilidade, se clicar na palavra nome, ele ja vai para completar o nome na caixa, e é importante colocar para relacionar o nome com o caixa de input-->
-    <form action="cadastro.php" autocomplete="off">
+            <!-- SEMPRE USAR LABEL cria uma area maior de sensibilidade, se clicar na palavra nome, ele ja vai para completar o nome na caixa, e é importante colocar para relacionar o nome com o caixa de input
+            
+            METHOD da para usar get e post
+          ->  get: mostra as informações que foram inseridas na url assim que envia o formulario... usar quando os dados não forem pessoais... não da pra usar com com mais de 3.000 bytes
+          ->  post: ele faz com que as informações digitadas no formulario não apareçam na url... usar para dados sensiveis, se os dados tiverem mais de 3.000 bytes-->
+    <form action="cadastro.php" method="post" autocomplete="off">
         
         <p><label for="inome">Nome: </label>
             <input type="text" name="nome" id="inome"> </p> 
