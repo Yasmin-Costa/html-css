@@ -9,10 +9,11 @@
 <body>
     <h1>Exemplo de Formulário</h1>
     <form action="cadastro.php" method="get" autocomplete="on">
+        
     <fieldset>
         <legend>Sexo</legend>
 
-        <!-- input:radio para -->
+        <!-- input:radio .. o name quando se trata do radio é nescessario ser o mesmo, ja o id  tem que ser diferente, mas o name tem que ser igual -->
         <input type="radio" name="sexo" id="imasculino" value="M">
         <label for="imasculino">Masculino</label> <br>
 
@@ -23,6 +24,7 @@
     <fieldset>
         <legend>Esportes Favoritos</legend>
 
+        <!-- input:checkbox-->
         <input type="checkbox" name="fut" id="ifut">
         <label for="ifut">Futebol</label><br>
 
