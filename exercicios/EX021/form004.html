@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <fieldset> <!--- é uma borda que fica em volta das informações, é bom para separar o formulario por categoria-->
+        
+            <legend>Dados Pessoais</legend> <!-- fica escrito em cima da linha que o Fieldset cria.-->
+
+
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" required minlength="3" maxlength="20">
+            </p>
+            <!-- input:email -->
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required>
+            </p>
+            <!--input:tel-->
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required placeholder="(xx)xxxxx-xxxx">
+                <!-- pattern vai definir quantos numeros vai colocar antes do traço(-) e depois, ou se vai colocar o dd detro do parenteses, quantos numeros tem que colocar...
+            
+                Esse pattern é um RegEx, estudar mais sobre Reg Ex
+            -->
+            </p>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+    
+</body>
+</html>
