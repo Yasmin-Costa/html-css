@@ -1,0 +1,67 @@
+Informações sobre formulário:
+
+usa-se a tag <form>, dentro dessa tag existem algumas informações para serem preenchidas:
+
+		- action="" : é para onde o arquivo vai ser enviado, na aula está sendo usando um aquivo "cadastro.php".
+
+--------------------------------------------
+
+		- method="" : serve para usar o get ou post que é para saber se vai mostrar as informações inseridas no formulário na parte da URL, ou não.
+	--> get: mostra as infomações que foram inseridas no formulário na URL assim que envia, é usado qunado os dados não forem pessoais, e não da para usar com mais de 3.000 bytes
+	--> post: não mostra as informações que foram digitadas no formulario aparecerem na URL, é usado para dados sensiveis, e pode ser usado quando os dados possuirem mais de 3.000 bytes.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Em seguida vamos para o conteudo do formulário. 
+
+usa-se a tag <p> normalmente. porém é importante sempre usar LABEL.
+
+		- label: é usado para criar uma area de sensibilidade maior, ou seja, se clicar na palavra que esta dentro da tag <p> ela vai direto para completar a caixa, ou selecionar algo que esteja ligado com a palavra em questão. É importante colocar para relacionar o nome com a caixa de input.
+
+		- autocomplete="off": é para quando fo colocar as informações o input, não aparecer opções para completar.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+		IMPORTANTE
+--NO input, name é para o html e php indentificar, já no id é para JavaScript e label.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+		ANTES DO INPUT:
+	- a tag <fieldset> é uma borda que fica em volta das informações, é bom para separar o formulário por categoria, nela da para colocar a tag <legend> que serve para expecificar (título) o que contem dentro dessa borda
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+		INPUT: dentro do input depois de definir o type="", name="" e id="", podemos usar algumas ferramentas para deixar o input mais personalizado, podendo usar por exemplo:
+	
+	required: quando usado, se torna obrigatório o preenchimento do input
+	--------------------------------------------------------------------------
+	minlength: é a quantidade minima de caracteres que poder ser inserida no input.
+	-------------------------------------------------------------------------
+	maxlength: quantidade maxima de caracteres que pode ser isenrida no input.
+	-------------------------------------------------------------------------
+	size: é basicamente o tamanho da caixa de input, ou seja, quantos caracteres vão aparecer.
+	-------------------------------------------------------------------------
+	placeholder: é a mensagem que você inseririr fica dentro do input.
+-	-------------------------------------------------------------------------
+	autocomplete="current-passaword": (sugere senha atual),  nesse autocomplete o que o usuario colocar, tipo senha atual, nova senha, ele sempre vai sugerir a senha que ja foi colocada nesse site anteriormente. 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+	NO INPUT:TEL, tem uma definição que é:
+	pattern: ele vai definir quantos numeros vai colocar antes do traço (-) e depois, ou se vai colocar o ddd dentro do parenteses, quantos numeros tem que colocar. ele é iniciado como ^\ e termina com $, é meio complicado mas funcional...
+	"^\(\d{2}\)\d{4,5}-\d{4}$"
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
