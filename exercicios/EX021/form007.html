@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <!--tag <select> nela diferente do input precisa feixar a tag, ou seja </select>. ela tem a função de fazer aparecer um campo onde tem varias coisas para selecionar, como o exemplo abaixo ESTADOS.
+        dentro dela colocamos a tag <option> que é onde vai ficar as informações que quer que seja selecionado
+            
+        optgroup label="..."  -- serve para separar o qeu foi inserido no option em grupos, como o exemplo abaixo foi dividido por regioes do Brasil. Essa sessão não é clicavel, ou seja, oque escrever dentro do label não vai dar para clicar, é apenas para organizar o conteudo de seleção mesmo.-->
+        <p>
+            <label for="iest">Estado</label>
+            <select name="estado" id="iest">
+                
+                <option value="" selected>---Escolha---</option>  <!--faz com que o que apareça no campo vazio seja a paralavra escolha, se usar o     selected      em outro option como em São Paulo, o que fica como padrao no campo é São Paulo-->
+                <optgroup label="Região Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup> 
+                
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio GRande do Norte</option>
+                </optgroup>
+
+            </select>
+        </select>
+        </p>
+
+        <!--a tag <datalist> serve para quando você coloca as opções para selecionar, mas tambem deixa aberto para o usuario escrever no campo caso queira,  
+           IMPORTANTE
+            o que esta escrito no id do datalist vai em list no input-->
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="listprof">
+            <datalist id="listprof">
+                <option>Administrador</option>
+                <option>Contabilista</option>
+                <option>Desenvolvedor</option>
+                <option>Professor</option>
+            </datalist>
+        </p>
+
+        <!-- a tag <textarea> é um campo onde da para o usuario escrever o que quiser. não tem muito segredo nesse-->
+        <p>
+            <label for="imsg">Mensagem:
+            </label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+
+</html>
