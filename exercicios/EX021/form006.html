@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        
+        <!--input:color
+        no value da para definir a cor que vai aparecer de cara quando o usuario acessar o formulario, nesse caso é azul-->
+        <p>
+            <label for="icor">Cor:</label>
+            <input type="color" name="cor" id="icor" value="#0000ff">
+        </p>
+
+        <!--input:range
+        esse input vai por padrão de 1 a 100 e com min e max da para alterar esses mavoles, e o value é para indicar como vai começar, nesse caso vai começar com 5, o usuario pode mudar o valor entre 1 e 10 nesse caso.-->
+        <p>
+            <label for="inivel">nivel de satisfação: </label>
+            <input type="range" name="nivel" id="inivel" min="1" max="10" value="5">
+        </p>
+
+        <!--input:file
+        quando mexer com o input tem que usar o method post porque pode passar de 3.000 bytes-->
+
+        <label for="ifoto">Foto do Perfil</label>
+        <input type="file" name="foto" id="ifoto">
+        
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
